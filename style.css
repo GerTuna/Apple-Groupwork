@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "sfpro";
+    src: url(FontsFree-Net-SFProText-Regular.ttf) format("truetype");
+}
+
+main {
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "sfpro", "sans-serif";
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.863);
+    height: 48px;
+    list-style-type: none;
+    padding: 22px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+div.wrap a.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    text-decoration: none;
+    opacity: 0;
+    background-color: #FFF;
+}
+
+.iphonelink, .learnmore, .buy {
+    font-size: 17px;
+    color: rgba(4, 4, 214, 0.822);
+    text-align: center;
+    padding-top: 0.9rem;
+    z-index: 9;
+    padding-inline-end: 10px;
+}
+
+
+div.iphone14 {
+    background-color: rgb(251, 251, 253);
+    width: 100%;
+    height: 550px;
+    background-size: 800px 550px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url("images/hero_iphone14__fjmsqstr1ceq_small_2x.jpg");
+}
+
+@media (max-width: 734px){
+    h2 {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "sfpro", "sans-serif";
+    }
+}
+
+@media (max-width: 734px){
+    h3 {
+        font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        letter-spacing: 0em;
+        font-family: "sfpro", "sans-serif";
+    }
+}
+
+@media (max-width: 832px) {
+    .header {
+        display: none;
+    }
+}
+
+@media (min-width: 833px) {
+    .hidden {
+        display: none;
+    }
+}
+
+@media (min-width:670px) {
+    div.iphone14 {
+        background-color: rgb(251, 251, 253);
+        width: 100%;
+        height: 700px;
+        background-size: 1100px 700px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-image: url("images/hero_iphone14__fjmsqstr1ceq_mediumtall_2x.jpg");
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -.002em;
+        font-family: "sfpro", "sans-serif";
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 400;
+        letter-spacing: .009em;
+        font-family: "sfpro", "sans-serif";
+    }
+
+    .iphonelink, .learnmore, .buy {
+        font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        color: rgba(4, 4, 214, 0.822);
+        text-align: center;
+        padding-top: 0.9rem;
+        z-index: 9;
+        padding-inline-end: 10px;
+    }
+}
+
