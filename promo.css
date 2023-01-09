@@ -1,0 +1,383 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --promo1-link: url(https://www.apple.com/v/home/aw/images/promos/apple-watch-ultra/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg);
+  --promo2-link: url(https://www.apple.com/v/home/aw/images/promos/apple-fitness-plus-iphone/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg);
+  --promo3-link: url(https://www.apple.com/v/home/aw/images/promos/cny-gift-guide/promo__sw58lbodkmqq_large.jpg);
+  --promo4-link: url(https://www.apple.com/v/home/aw/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg);
+  --promo5-link: url(https://www.apple.com/v/home/aw/images/promos/arcade-episode-xoxo/xoxo_promo__czow8gsh0gk2_large.jpg);
+  --promo6-link: url(https://www.apple.com/v/home/aw/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
+
+.link-promo {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-section .link-promo a {
+  font-size: 16px;
+}
+
+.link-promo a {
+  font-size: 20px;
+  color: #3b7cd3;
+  text-decoration: none;
+}
+
+.link-promo a:hover {
+  text-decoration: underline;
+}
+
+.link-promo a::after {
+  content: " >";
+  font-size: 20px;
+  color: #3b7cd3;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    "Gill Sans MT", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.link-promo a::after:hover {
+  text-decoration: none;
+}
+
+.link-promo-buy {
+  margin-left: 35px;
+}
+
+.promo-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 6px;
+}
+
+.promo-section section {
+  width: calc((100% / 2) - 12px);
+  height: 580px;
+  margin: 6px;
+}
+
+.promo1 {
+  background-color: #fbfbfd;
+}
+
+.title-promo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.promo1 h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+
+.promo1 img {
+  width: 140px;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.promo2 {
+  background-color: white;
+}
+
+.promo2 img {
+  width: 140px;
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.title-promo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.title-promo2 h2 {
+  margin: 0;
+  font-size: 36px;
+  color: black;
+  padding-top: 45px;
+}
+
+.title-promo2 h3 {
+  font-size: 20px;
+  color: black;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.promo1 {
+  background-image: var(--promo1-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo2 {
+  background-image: var(--promo2-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo3 {
+  background-image: var(--promo3-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.promo4 {
+  background-image: var(--promo4-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo5 {
+  margin-top: 10px;
+  background-image: var(--promo5-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-promo-bottom {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    
+}
+
+.link-promo-bottom a {
+    color: white;
+}
+
+.link-promo-bottom a::after {
+    line-height: inherit;
+    content: " >";
+}
+
+.promo6 {
+  margin-top: 10px;
+  background-image: var(--promo6-link);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-promo3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.title-promo3 h3 {
+  color: white;
+  max-width: 290px;
+  font-size: 21px;
+  line-height: 1.2381;
+  font-weight: normal;
+  letter-spacing: 0.016em;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.promo3 a {
+  color: white;
+}
+
+.promo3 .link-promo a::after {
+  color: rgb(251, 253, 255);  
+}
+
+.title-promo3 h2 {
+  color: white;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: normal;
+  letter-spacing: 0em;
+  margin-top: 40px;
+}
+
+.title-promo4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-promo4 img {
+  width: 140px;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.title-promo4 h3 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.title-promo4 h2 {
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+
+.title-promo5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 3rem;
+  gap: 5px;
+}
+
+.title-promo5 img {
+  width: 180px;
+  margin: 0;
+}
+
+.title-promo5 h3 {
+  color: white;
+  max-width: 350px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.title-promo6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;  
+  padding-top: 45px;  
+}
+
+.title-promo6 h3 {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  max-width: 270px;
+  text-align: center;
+}
+
+.promo6 .link-promo a {
+  color: #06c;
+  padding-left: 30px;
+}
+
+.promo6 .link-promo a::after {
+  color: #06c;
+}
+
+@media (max-width: 1068px) {
+  .link-promo a {
+    font-size: 18px;
+  }
+
+  .promo-section section {
+    height: 490px;
+  }
+
+  .promo-section section h2 {
+    font-size: 30px;
+  }
+
+  .promo-section section h3 {
+    font-size: 18px;
+  }
+
+  .promo1 h3 {
+    font-size: 16px;
+  }
+
+  .promo1 img {
+    width: 140px;
+  }
+
+  .ipad img {
+    width: 115px;
+  }
+
+  .promo5 img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 730px) {
+  .link-promo a {
+    font-size: 16px;
+  }
+
+  .link-promo a::after {
+    font-size: 16px;
+  }
+
+  .promo-section {
+    display: block;
+    margin: 0;
+  }
+
+  .promo-section section {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .promo5 .link-promo-buy {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 280px) {
+  .promo5 .link-promo-buy {
+    margin-left: 2%;
+  }
+
+  .promo5 .link-promo a {
+    font-size: 14px;
+  }
+
+  .promo5 .link-promo a::after {
+    font-size: 14px;
+  }
+
+  .promo-section section h3 {
+    font-size: 16px;
+  }
+}
