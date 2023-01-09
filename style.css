@@ -15,6 +15,12 @@
 }
 
 
+button {
+    background-color: rgba(22, 22, 22, 0);
+    border: none;
+}
+
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +51,7 @@ nav {
 
 
 a.background {
-    z-index: 1; 
+    z-index: 0; 
     position:absolute; 
     width:100%;
     height:100%;
@@ -62,7 +68,6 @@ div.textwrap {
     top: 80px;
     transform: translate(-50%);
     text-align: center;
-    z-index: 2;
 }
 
 /* widescreen nav */
@@ -86,6 +91,58 @@ ul.smallscreen {
 }
 
 
+ul li ul.dropdownlink {
+    width: 500px;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 100;
+    left: calc(50% - 250px);
+    top: 0px;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 0px 0px 10000px rgba(128, 128, 128, 0.548);
+    display: none;
+}
+
+
+ul li ul li.searchbardd {
+    display: inline-block;
+}
+
+ul li ul li#x {
+    position: absolute;
+    right: 0pt;
+    top: -4px;
+}
+
+ul li ul li#si {
+    position: relative;
+    left: 0pt;
+    top: 8px;
+}
+
+ul li ul li input {
+    position: relative;
+    top: 15;
+    max-width: 400px;
+}
+
+
+ul.dropdownlink li {
+    display: block;
+}
+
+
+ul.dropdownlink li a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+}
+
+
+ul li:hover ul.dropdownlink{
+    display: block;
+}
+
 
 div.wrap {
     background-color: rgb(251, 251, 253);
@@ -98,19 +155,67 @@ div.wrap {
 }
 
 
-.learnmore, .buy {
+ul.dropdownlink input {
+    position: absolute;
+    background-color: rgba(22, 22, 22, 0);
+    border: none;
+    width: 550px;
     font-size: 17px;
-    color: rgba(4, 4, 214, 0.822);
+    line-height: 1.29412;
+    letter-spacing: -.021em;
+    font-family: "sfpro", "sans-serif";
+    color: whitesmoke;
+}
+
+
+ul.dropdownlink img {
+    height: auto;
+    width: 14px;
+    margin-right: 15px;
+}
+
+
+li.ql {
+    color: grey;
+    position: relative;
+    left: 25px;
+    font-size: 13px;
+    line-height: 1.39412;
+    letter-spacing: -.021em;
+    font-family: "sfpro", "sans-serif";
+    padding-top: 26px;
+}
+
+ul li.ddcl a{
+    font-size: 13px;
+    letter-spacing: -.021em;
+    margin-left: 40px;
+    font-family: "sfpro", "sans-serif";
+}
+
+
+div a.headlink {
+    font-size: 17px;
     padding-top: 0.9rem;
-    z-index: 2;
+    z-index: 999;
     padding-inline-end: 10px;
 }
 
 
-#searchicon {
+#l12 {
     position: relative;
     top: -4px;
     filter: brightness(0) invert(1);
+}
+
+
+a.headlink:link, a.headlink:visited {
+    color: rgba(4, 4, 214, 0.822)
+}
+
+
+a.headlink:hover, a.headlink:active {
+    text-decoration: underline;
 }
 
 
